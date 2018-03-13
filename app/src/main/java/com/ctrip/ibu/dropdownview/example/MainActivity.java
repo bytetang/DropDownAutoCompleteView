@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
         emailPreffixList.add("@qq.com");
         dropdownView.setDataSource(emailPreffixList);
         dropdownView.setDataType(DropDownDataType.EMAIL);
-        dropdownView.enableAutoSaveHistory(true);
 
 
         findViewById(R.id.btnSave).setOnClickListener(new View.OnClickListener() {
