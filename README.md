@@ -2,16 +2,15 @@
 Android输入提示选择控件
 
 1. 输入下拉提示
-2. 方便记录输入记录并支持删除
+2. 方便记录、管理输入记录（支持删除）
 3. 高亮提示文本
 
-演示效果：
-
+## 演示效果： ##
 
 ![Alt Text](https://github.com/tangchiech/DropDownAutoCompleteView/blob/master/gif/dropdown.gif)
 
 
-使用教程：
+## 使用教程： ##
 
 ```java
 final DropDownEditTextView dropdownView = findViewById(R.id.dropdownView);
