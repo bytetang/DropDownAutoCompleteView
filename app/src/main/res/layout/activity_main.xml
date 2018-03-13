@@ -6,34 +6,44 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <com.ctrip.ibu.dropdownview.DropDownEditTextView
-            android:id="@+id/dropdownView"
+    <TextView
+            android:text="输入选择控件"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            tools:text="输入选择控件"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_width="220dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"/>
-
-    <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:ems="10"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            android:id="@+id/editText"
             android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/dropdownView"/>
+            android:textSize="18sp"/>
 
-    <Button
+
+    <android.support.v7.widget.AppCompatButton
             android:text="保存记录"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             android:id="@+id/btnSave"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/editText"/>
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/dropdownView"/>
+
+
+    <com.ctrip.ibu.dropdownview.DropDownEditTextView
+            android:id="@+id/dropdownView"
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_cccccc"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView"/>
 
 </android.support.constraint.ConstraintLayout>
